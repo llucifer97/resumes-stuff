@@ -1,0 +1,259 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Ayush Raj (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ayush}{Raj}{ \urlstyle{same}\url{https://llucifer97.github.io/} \\
+\href{mailto:ayushraj.bit17@gmail.com}{ayushraj.bit17@gmail.com} | Contact : (+91)7970761538
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\descript{Birla Institute Of Technology, MESRA }
+\descript{BE in Electronics and communication engg.}
+\location{CGPA 6.77}
+\location{Expected MAY 2021 | India }
+
+\section{} 
+
+\descript{Delhi Public School ,Dhanbad }
+\location{Class X - 9.8 Cgpa [ 2013-14 ]}
+\location{Class XII - 80.2 Percentage [ 2015-16]}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/llucifer97}{\custombold{llucifer97}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/ayush-raj97/}{\custombold{ayushraj97}} \\
+Leetcode://  \href{https://leetcode.com/llucifer97/}{\custombold{llucifer97}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\runsubsection{Programming}\\
+ \textbullet{} C++ \textbullet{} Javascript \\
+  \textbullet{} Python \textbullet{}  HTML5 \\ \textbullet{}CSS 
+   \\
+%\subsection{Programming}
+
+\location{Frameworks/Libraries:}
+ \textbullet{} MySQL 
+\textbullet{}Express.js  \\ \textbullet{} Node.js
+\textbullet{} React.js\\  
+ 
+ 
+ \location{Tools/Software:}
+ \textbullet{} GIT \textbullet{}Linux \textbullet{}Postman
+\sectionsep
+
+
+\section{COURSEWORK}
+\textbullet{}Fundamentals of Data Structures\\
+\textbullet{}Data structure and Algorithm (C++) \\
+\textbullet{}Competitive Programming\\
+\textbullet{}Operating Systems\\
+\textbullet{}Computer Networks\\
+\textbullet{}Object Oriented Programming\\
+\textbullet{}Database Management Systems\\
+%\subsection{Programming}
+
+
+
+
+
+
+
+ \section{Soft Skills}
+ \textbullet{}Strategic Thinking and Planning\\
+\textbullet{}Ability to adapt to situations\\
+ \textbullet{}Decision making
+ \sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Redhenlab}
+\descript{| Google Summer Of Code’19 Student (open source)}
+\location{Expected May 2019 – Aug 2019 | Remote}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}\item Planned,designed and developed a Gesture Annotator Tool to visualize and
+validate human-pose extracted from  images , with over 2000+ lines of the codebase.
+\item Developed the UI and integrated the plotting features and integrated with RESTAPI and deployed in singularity container on Redhen cloud server.
+\item Wrote web-crawler to collect GBs of data from open sources and bash scripts
+to automate the ML pipeline.
+\item Project can be found  \href{https://summerofcode.withgoogle.com/archive/2019/projects/5565179075493888/}{Here}.
+\item Tech stack: Flask ,Python ,MongoDB, keras
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+
+\runsubsection{GEEKCHAT}
+\descript{| \href{https://geeky-chat.herokuapp.com}{Demo} }
+
+GeekChat is an realtime multiuser chat app,to enable real-time, bidirectional communication
+\begin{tightemize}
+\item Provides a Global Chat which can be used by anyone using the application to
+broadcast messages to everyone else in the particular room.
+\item Updates conversation lists, user lists and messages in real time.
+\item Tech stack: HTML , CSS ,socket.io , Node.js
+\end{tightemize}
+\sectionsep
+
+\runsubsection{VIPANI}
+\descript{| \href{https://github.com/llucifer97/Vipani}{code}}
+
+Vipani is an online e-commerce web app to serve its customer products online.
+\begin{tightemize}
+\item Build a Restful APIs and created endpoints to perform CRUD operations.
+\item Designed and implemented database schema in MongoDB for data storage .
+\item Tech stack: Node.js , JavaScript , Express, React.js , MongoDB
+\end{tightemize}
+\sectionsep
+
+\runsubsection{DataStore}
+\descript{| \href{https://github.com/llucifer97/Data-Store}{code}}
+
+
+\begin{tightemize}
+\item It is file-based key-value datastore that supports CRUD operations used as
+local storage for one single process.
+\item Implemented TTL(time-to-live) cache for quick access of data.
+\item Tech stack: Node.js , JavaScript , Express
+\end{tightemize}
+\sectionsep
+
+
+
+\runsubsection{ACCOUNTING MANAGEMENT SYSTEM}
+\descript{| \href{https://github.com/llucifer97/PAYROLL-MANAGEMENT-SYSTEM}{code}}
+
+
+\begin{tightemize}
+\item  Developed an application using C++ and wrote 1000+ lines of code
+\item  Used Object-oriented programming(OOP) concepts 
+\item  Tech stack: C++14 
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENTS} 
+\begin{tabular}{rll}
+2018	    & Got third position in Machine Learning Hacakthon(BIT MESRA)\\
+2020        & Solved 600+ problems on various coding platforms\\
+2021        & Cleared first round of Uber Hastag challenge
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{minipage} 
+\end{document}
