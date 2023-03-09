@@ -192,9 +192,9 @@ Leetcode://  \href{https://leetcode.com/llucifer97/}{\custombold{llucifer97}}
 \location{Dec 2021 – Present}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Worked on designing and creating a new microservice for task tracking and outbound call for the internal team which increased the team's efficiency and visibility.
-\item Worked on integrating and implementing the complete workflow of payment links in the payment gateway which  greatly reduced internal team call volumes and increased customer experience
-\item Was involved in bug fixing, writing rca and fixing customer issues which might come.
+\item Designed and developed a new microservice for task tracking and outbound calls that significantly increased the efficiency and visibility of the internal team.
+\item Integrated and implemented the complete workflow of payment links in the payment gateway, resulting in a drastic reduction of internal team call volumes and an overall improved customer experience.
+\item I was responsible for bug fixing, writing RCA reports, and resolving customer issues in a timely and effective manner.
 \item Tech stack: Springboot , microservice architecture, RDS , AWS , jenkins 
 \end{tightemize}
 
@@ -217,7 +217,7 @@ validate pose extracted from  images, with over 2000+ lines of the codebase.
 %     Project
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Crio Backend Track}
+\section{Crio Backend Track 2021}
 
 \runsubsection{QMoney}
 \descript{| \href{}{code}  }
